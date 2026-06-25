@@ -1,5 +1,5 @@
 import os
-print("Saving model to: ", os.getcwd())  # <-- Add this line at the top
+print("Saving model to: ", os.getcwd())
 
 import pandas as pd
 import numpy as np
@@ -35,4 +35,4 @@ model = RandomForestRegressor()
 model.fit(X_train, y_train)
 
 joblib.dump(model, 'power_model.pkl')
-print("✅ Model trained and saved!")
+print(" Model trained and saved!")
